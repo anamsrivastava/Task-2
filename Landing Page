@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom of Sneakers</title>
+    <link rel="stylesheet" href="C:\Users\Anam\Documents\sneaker style.css">
+</head>
+<body>
+    <header>
+        <h1>KINGDOM OF SNEAKERS</h1>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\Anam\Documents\contact us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Categories</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Basketball</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                    </ul>
+                </li>
+            
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Step Up Your Game!</h2>
+            <p>Discover the latest trends in sneakers.</p>
+        </section>
+        <section class="categories" id="categories">
+            <h2>Featured Sneakers</h2>
+            <div class="sneaker-cards">
+                <div class="sneaker-card">
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Step Up Your Game!</h2>
+            <p>Discover the latest trends in sneakers.</p>
+        </section>
+        <section class="categories" id="categories">
+            <h2>Featured Sneakers</h2>
+            <div class="sneaker-cards">
+                <div class="sneaker-card">
+                    <img src="https://th.bing.com/th/id/OIP.B59ISTdGb-290edMppRdCAHaE8?w=269&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Sneaker 1">
+                    <h3>Nike Air Max</h3>
+                    <p>Price:&#8377;20,000</p>
+                    <p>Perfect blend of comfort and style.</p>
+                </div>
+                <div class="sneaker-card">
+                    <img src="https://m.media-amazon.com/images/I/51iBJV88NhL._AC_UY1000_.jpg" alt="Sneaker 2">
+                    <h3>Balenciaga</h3>
+                    <p>Price:&#8377;72,000</p>
+                    <p>Unmatched energy return for all-day comfort.</p>
+                </div>
+                <div class="sneaker-card">
+                    <img src="https://th.bing.com/th/id/OIP.0xAN7DchwvkvdQydM685oAHaEK?w=302&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Sneaker 3">
+                    <h3>Nike Air Jordan</h3>
+                    <p>Price:&#8377;12,000</p>
+                    <p>Retro style meets modern comfort.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kingdom of Sneakers. All Rights Reserved.</p>
+    </footer>
+    <a href="#" id="backToTop" style="display: none;">Back to Top</a>
+    <script src="C:\Users\Anam\Documents\script2.js"></script>
+    
+</body>
+</html>
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fallback for older browsers */
+    color: #ffffff;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav a {
+    color: #d9431a;
+    text-decoration: none;
+}
+nav ul li {
+    position: relative; /* Ensures dropdown is positioned correctly */
+}
+
+nav .dropdown {
+    display: none;
+    position: absolute;
+    background: #0b0b0a;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    left: 50%; /* Position from the left */
+    transform: translateX(-50%); /* Shift it back by half its width */
+    min-width: 150px; /* Set a minimum width for the dropdown */
+    text-align: center; /* Center align text in the dropdown */
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.dropdown a:hover {
+    background: #ff4757;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ff4757, #ff6347, #1e90ff, #4b0082);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #ffffff;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.categories {
+    padding: 20px;
+    text-align: center;
+}
+
+.sneaker-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sneaker-card {
+    background: #282828;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.sneaker-card:hover {
+    transform: scale(1.05);
+}
+
+.sneaker-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+/* Contact page styling */
+.contact-info {
+    background: linear-gradient(to right, #ff6347, #1e90ff);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contact-info a {
+    color: #ffffff;
+    font-weight: bold;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none; /* Hidden by default */
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
